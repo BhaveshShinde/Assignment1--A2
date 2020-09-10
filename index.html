@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<!-- title icon-->
+	<link rel="shortcut icon" href="/Users/manthanshah/Desktop/random files/My webpage/icon.png">
+	<!-- css file -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--fontawesome-->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main--------->
+	<section id="main">
+		<!-- navigation ---->
+		<nav>
+			<!--logo------->
+			<a href="#" class="logo"> LOGO </a>
+			<!--bar icon-->
+			<div class="toggle"></div>
+			<!--menu---->
+			<ul class="menu">
+				<li> <a href="#main" class ="active">Home</a> </li>
+				<li> <a href="#about">About</a> </li>
+				<li> <a href="#portfolio">Portfolio</a> </li>
+				<li> <a href="#contact-form">Contact</a> </li>
+			</ul>
+			<!-- language ---->
+			<a href="#" class="lang">En</a>
+		</nav>
+		<!-- name--->
+		<div class="name">
+			<p><font color ="#eee">Hello</p>
+			<h1><font color ="#eee">I'm <font color="#17d1ac">Bhavesh</font> <font color ="#eee">Shinde</h1>
+			<p class="details"> Access CV here </p>
+			<!-- Cv- btn-->
+			<a href="#" class="cv-btn">Download Cv</a>
+		</div>
+		<!--social----->
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-linkedin"></i></a>
+		</div>
+		<!-- arrow-->
+		<div class="arrow"></div>
+	</section>
+
+	<!--about-------->
+	<section id="about">
+		<div class="about-text">
+			<h1>About me</h1>
+			<h2>Front end developer</h2>
+			<p>Find me on GitHub</p>
+			<!--btn-->
+			<button>More Details</button>
+		</div>
+		<div class="about-image">
+			<img src="profile.JPG" alt="model"/>
+		</div>	
+	</section>
+
+	<!--Portfolio---->
+	<section id="portfolio">
+		<!--heading-->
+		<h1 class="p-heading">Portfolio</h1>
+		<!-- box container---->
+		<div class="p-b-container">
+			<!--box1-->
+			<div class="p-box">
+				<!--text---->
+				<div class="text-overlay">
+					<h1>Student Management</h1>
+					<p>Project</p>
+				</div>
+				<!--img--->
+				<img src="w1.jpg">
+			</div>
+			<!--box2-->
+			<div class="p-box">
+				<!--text---->
+				<div class="text-overlay">
+					<h1>AD daignosis</h1>
+					<p>Project</p>
+				</div>
+				<!--img--->
+				<img src="w2.jpg">
+			</div>
+			<!--box3-->
+			<div class="p-box">
+				<!--text---->
+				<div class="text-overlay">
+					<h1>Movie ticket Booking</h1>
+					<p>Project</p>
+				</div>
+				<!--img--->
+				<img src="w3.jpg">
+			</div>
+		</div>
+	</section>
+	<!--contact-btn-->
+	<section id="contact-btn">
+		<!--heading-->
+		<h1>If u have any project in your mind</h1>
+		<!--btn-->
+		<a href="#contact-form">Contact Me</a>
+	</section>
+
+	<!--contact form----------->
+	<section id="contact-form">
+		<form>
+			<!--left-->
+			<div class="contact-left">
+				<!--heading-->
+				<h1 class="h-l-heading"><font style="border-bottom: 3px solid #1ed98b;">Write</font> to me</h1>
+					<div class="f-name">
+						<!--name-->
+						<font>Name</font>
+						<!--input-->
+						<input type="text" placeholder="Full Name">
+					</div>
+					<!--email------>
+					<div class="f-email">
+						<!--name-->
+						<font>E-mail</font>
+						<!--input-->
+						<input type="email" placeholder="abc@xyz.com">
+					</div>
+			</div>
+			<!--right-->
+			<div class="contact-right">
+				<!--message box------>
+				<div class="message">
+					<font>Message</font>
+					<textarea name="message" rows="5" cols="20" placeholder="Write Message....."></textarea>
+				</div>	
+					<!--submit-->
+					<button>submit</button>						
+			</div>
+		</form>		
+	</section>
+
+	<!--jquery---->
+	<script type="text/javascript" src="file.js">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('toggle').toggleClass('active')
+				$('nav ul').toggleClass('active-menu')
+			}
+		}
+	</script>
+</body>
+</html>
